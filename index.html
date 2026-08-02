@@ -1,377 +1,688 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
 
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-רעיון מעולה. JavaScript יכול להפוך את האתר שלך להרבה יותר חי ומרשים, בלי להעמיס עליו.
+<title>נדב זהבי | הרצאה על חוסן מנטלי</title>
 
-הייתי מוסיף למשל:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-🔥 1. טקסט שמתחלף אוטומטית
-במקום משפט אחד:
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-"חוסן מנטלי"
+<link rel="stylesheet" href="style.css">
 
-המשפט יתחלף כל כמה שניות:
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav>
+
+<div class="logo">
+
+נדב זהבי
+
+</div>
+
+<ul>
+
+<li><a href="#about">עליי</a></li>
+
+<li><a href="#lecture">ההרצאה</a></li>
+
+<li><a href="#audience">למי זה מתאים</a></li>
+
+<li><a href="#reviews">המלצות</a></li>
+
+<li><a href="#contact">יצירת קשר</a></li>
+
+</ul>
+
+</nav>
+
+<header>
+
+<div class="overlay"></div>
+
+<div class="hero">
+
+<h1>
+
+איך ממשיכים אחרי אירוע שמשנה את החיים?
+
+</h1>
+
+<h2 id="changingText">
 
 חוסן מנטלי
 
-כוח לבחור
+</h2>
 
-לצמוח ממשבר
+<p>
 
-להפוך כאב לעוצמה
+הרצאה עוצמתית על התמודדות, בחירה וצמיחה מתוך משבר.
 
-<h2 id="changingText">חוסן מנטלי</h2>
+</p>
 
-<script>
-const words = [
-"חוסן מנטלי",
-"כוח לבחור",
-"לצמוח ממשבר",
-"להפוך כאב לעוצמה"
-];
+<a class="btn"
 
-let i=0;
+href="https://wa.me/972XXXXXXXXX">
 
-setInterval(()=>{
-i=(i+1)%words.length;
-changingText.style.opacity=0;
+הזמנת הרצאה
 
-setTimeout(()=>{
-changingText.innerHTML=words[i];
-changingText.style.opacity=1;
-},300);
+</a>
 
-},2500);
-</script>
+</div>
 
-<style>
-#changingText{
-transition:.3s;
-}
-</style>
-✨ 2. רקע עם חלקיקים זוהרים
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</header>
 
-<div id="particles-js"></div>
+<section id="about">
 
-<style>
-#particles-js{
-position:fixed;
-width:100%;
-height:100%;
-z-index:-1;
-top:0;
-left:0;
-}
-</style>
+<div class="container">
 
-<script>
+<h2>
 
-particlesJS("particles-js",{
+הסיפור שלי
 
-particles:{
-number:{value:60},
-color:{value:"#d8b25b"},
-shape:{type:"circle"},
-move:{speed:1},
-size:{value:3}
-}
+</h2>
 
-});
+<p>
 
-</script>
-⚡ 3. כרטיסים שקופצים כשעוברים עם העכבר
-.card{
+כאן ייכנס הסיפור האישי שלך.
 
-transition:.4s;
+המסע.
 
-}
+ההתמודדות.
 
-.card:hover{
+והדרך שבה הפכת משבר לצמיחה.
 
-transform:
-translateY(-12px)
-scale(1.03);
+</p>
 
-box-shadow:0 20px 50px rgba(0,0,0,.5);
+</div>
 
-}
-🌟 4. מספרים שסופרים לבד
-<h2 id="counter">0</h2>
-<p>משתתפים בהרצאות</p>
+</section>
 
-<script>
+<section id="lecture">
 
-let n=0;
+<div class="container">
 
-let interval=setInterval(()=>{
+<h2>
 
-n++;
+על ההרצאה
 
-counter.innerHTML=n;
+</h2>
 
-if(n==500){
+<div class="cards">
 
-clearInterval(interval);
+<div class="card">
 
-}
+<h3>
 
-},5);
+חוסן מנטלי
 
-</script>
-💚 5. כפתור WhatsApp מרחף
-<a class="whatsapp"
+</h3>
+
+<p>
+
+איך בונים כוח פנימי גם ברגעים הקשים ביותר.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+כלים מעשיים
+
+</h3>
+
+<p>
+
+כלים שכל אחד יכול לקחת לחיים האישיים שלו.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+סיפור אישי
+
+</h3>
+
+<p>
+
+מסע אישי שמעניק תקווה ומוטיבציה.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="audience">
+
+<div class="container">
+
+<h2>
+
+למי ההרצאה מתאימה?
+
+</h2>
+
+<ul class="list">
+
+<li>בתי ספר</li>
+
+<li>מכינות קדם צבאיות</li>
+
+<li>צה"ל</li>
+
+<li>ארגונים</li>
+
+<li>קבוצות ספורט</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<div class="container">
+
+<h2>
+
+מה אומרים על ההרצאה?
+
+</h2>
+
+<div class="review">
+
+"הרצאה שפותחת את הראש ומנגישה את נושא החוסן המנטלי בצורה יוצאת דופן."
+
+</div>
+
+<div class="review">
+
+"מרגש, עוצמתי ומעורר השראה."
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container center">
+
+<h2>
+
+רוצים להזמין הרצאה?
+
+</h2>
+
+<p>
+
+אשמח לדבר אתכם.
+
+</p>
+
+<a class="btn"
+
+href="https://wa.me/972XXXXXXXXX">
+
+שלחו WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<a class="floating"
+
 href="https://wa.me/972XXXXXXXXX">
 
 💬
 
 </a>
 
-<style>
+<script src="script.js"></script>
 
-.whatsapp{
+</body>
 
-position:fixed;
+</html>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-bottom:30px;
+html{
+    scroll-behavior:smooth;
+}
 
-left:30px;
+body{
+    font-family:'Heebo',sans-serif;
+    background:#0b2f1c;
+    color:#fff;
+    overflow-x:hidden;
+}
 
-width:70px;
+#particles{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background:linear-gradient(180deg,#0b2f1c,#145a32);
+}
 
-height:70px;
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(12px);
+    z-index:999;
+}
 
-background:#25D366;
+.logo{
+    font-size:28px;
+    font-weight:900;
+    color:#d8b25b;
+}
 
-border-radius:50%;
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
 
-display:flex;
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
 
-justify-content:center;
+nav a:hover{
+    color:#d8b25b;
+}
 
-align-items:center;
+header{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    background:url("images/hero.jpg") center/cover no-repeat;
+}
 
-font-size:35px;
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
 
-text-decoration:none;
+.hero{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
+}
 
-animation:pulse 2s infinite;
+.hero h1{
+    font-size:64px;
+    margin-bottom:20px;
+    font-weight:900;
+}
 
+.hero h2{
+    color:#d8b25b;
+    font-size:40px;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 34px;
+    background:#d8b25b;
+    color:#08371d;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.05);
+}
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.container h2{
+    text-align:center;
+    font-size:42px;
+    color:#d8b25b;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+.list{
+    max-width:500px;
+    margin:auto;
+    font-size:22px;
+    line-height:2;
+}
+
+.review{
+    background:rgba(255,255,255,.08);
+    border-right:5px solid #d8b25b;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+}
+
+.center{
+    text-align:center;
+}
+
+.floating{
+    position:fixed;
+    left:25px;
+    bottom:25px;
+    width:70px;
+    height:70px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:34px;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+    animation:pulse 2s infinite;
 }
 
 @keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
 
-0%{transform:scale(1)}
+@media(max-width:768px){
 
-50%{transform:scale(1.15)}
+nav{
+    flex-direction:column;
+    padding:15px;
+}
 
-100%{transform:scale(1)}
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:10px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+section{
+    padding:70px 20px;
+}
+
+}// ===========================
+// טקסט מתחלף בכותרת
+// ===========================
+
+const words = [
+    "חוסן מנטלי",
+    "כוח לבחור",
+    "צמיחה מתוך משבר",
+    "להפוך כאב לעוצמה",
+    "לנצח את הקושי"
+];
+
+const changing = document.getElementById("changingText");
+
+let index = 0;
+
+setInterval(() => {
+
+    index++;
+
+    if(index >= words.length){
+        index = 0;
+    }
+
+    changing.style.opacity = 0;
+
+    setTimeout(() => {
+
+        changing.innerText = words[index];
+
+        changing.style.opacity = 1;
+
+    },300);
+
+},2500);
+
+
+// ===========================
+// חלקיקים ברקע
+// ===========================
+
+const particles = document.getElementById("particles");
+
+for(let i=0;i<80;i++){
+
+    let p = document.createElement("span");
+
+    p.classList.add("particle");
+
+    p.style.left = Math.random()*100+"vw";
+
+    p.style.top = Math.random()*100+"vh";
+
+    p.style.animationDuration = (5+Math.random()*8)+"s";
+
+    p.style.animationDelay = Math.random()*5+"s";
+
+    particles.appendChild(p);
 
 }
 
-</style>
-🎉 6. קונפטי כשמגיעים לסוף הדף
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
-<script>
+// ===========================
+// אנימציה בגלילה
+// ===========================
 
-let fired=false;
+const cards = document.querySelectorAll(".card,.review");
 
-window.addEventListener("scroll",()=>{
+const observer = new IntersectionObserver(entries=>{
 
-if(fired) return;
+entries.forEach(entry=>{
 
-if(window.innerHeight+window.scrollY>=document.body.offsetHeight-10){
+if(entry.isIntersecting){
 
-fired=true;
+entry.target.style.opacity="1";
 
-confetti({
-
-particleCount:150,
-
-spread:100,
-
-origin:{y:0.8}
-
-});
+entry.target.style.transform="translateY(0px)";
 
 }
 
 });
 
-</script>
-🌄 7. אפקט Parallax לתמונת הפתיחה
-window.addEventListener("scroll",()=>{
+},{
+threshold:.2
+});
 
-document.querySelector("header").style.backgroundPositionY=
-window.scrollY*0.5+"px";
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(60px)";
+
+card.style.transition=".8s";
+
+observer.observe(card);
 
 });
-⭐ 8. כוכבים נוצצים ברקע
-setInterval(()=>{
 
-const star=document.createElement("div");
 
-star.className="star";
+// ===========================
+// שינוי צבע התפריט
+// ===========================
 
-star.style.left=Math.random()*100+"vw";
+window.addEventListener("scroll",()=>{
 
-star.style.top=Math.random()*100+"vh";
+const nav = document.querySelector("nav");
 
-document.body.appendChild(star);
+if(window.scrollY>80){
 
-setTimeout(()=>star.remove(),2000);
+nav.style.background="rgba(0,0,0,.75)";
 
-},300);
-.star{
+}else{
 
-position:fixed;
+nav.style.background="rgba(0,0,0,.35)";
 
-width:4px;
+}
 
-height:4px;
+});
 
-background:#fff;
+
+// ===========================
+// אפקט זוהר לכפתורים
+// ===========================
+
+document.querySelectorAll(".btn").forEach(btn=>{
+
+btn.addEventListener("mouseenter",()=>{
+
+btn.style.boxShadow="0 0 25px #d8b25b";
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.boxShadow="none";
+
+});
+
+});
+
+
+// ===========================
+// יצירת CSS לחלקיקים
+// ===========================
+
+const style = document.createElement("style");
+
+style.innerHTML = `
+
+.particle{
+
+position:absolute;
+
+width:6px;
+
+height:6px;
+
+background:#d8b25b;
 
 border-radius:50%;
 
-box-shadow:0 0 15px white;
+opacity:.5;
 
-animation:fade 2s linear;
-
-pointer-events:none;
+animation:float linear infinite;
 
 }
 
-@keyframes fade{
+@keyframes float{
 
-from{
-opacity:1;
-transform:scale(2);
-}
+0%{
 
-to{
+transform:translateY(100vh);
+
 opacity:0;
-transform:scale(.2);
+
+}
+
+20%{
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
 }
 
 }
-מה הייתי בונה אם המטרה היא אתר שנראה מקצועי ומרשים
-🎥 סרטון פתיחה במסך מלא.
 
-✨ רקע חלקיקים עדינים בגווני ירוק וזהב.
+`;
 
-📜 גלילה עם אנימציות (Fade, Slide).
-
-📊 מונים מונפשים (הרצאות, משתתפים, שנות ניסיון – רק אם הנתונים אמיתיים).
-
-💬 המלצות שמתחלפות בקרוסלה.
-
-📷 גלריית תמונות עם פתיחה למסך מלא.
-
-🎵 אפקטי מעבר עדינים בין חלקים.
-
-📱 תפריט ניווט דביק.
-
-💚 כפתור WhatsApp צף עם אנימציה.
-
-🌙 מצב כהה/בהיר.
-
-🏆 סגנון יוקרתי עם ירוק כהה, לבן וזהב.
-
-כך האתר ירגיש כמו אתר מודרני של 2026 ולא רק דף נחיתה בסיסי.
-
-
-תביא לי את כל הקובץ לי הסופי
-
-בשמחה. אני יכול לבנות לך את כל הקובץ הסופי כעמוד אחד (HTML + CSS + JavaScript) עם כל האפקטים בפנים.
-
-אבל הוא יהיה באורך של 600–900 שורות קוד, וזה חורג ממגבלת האורך של הודעה אחת כאן, כך שלא אוכל להדביק את כולו בשלמותו בצ'אט.
-
-אני יכול להכין עבורך קובץ מלא שיכלול בין היתר:
-
-💚 עיצוב יוקרתי בהשראת הירוק-לבן (ללא שימוש במיתוג הרשמי של מכבי חיפה).
-
-🎥 Hero מרשים עם תמונת רקע.
-
-✨ אנימציות גלילה.
-
-🌟 חלקיקים זוהרים ברקע.
-
-🔄 טקסטים מתחלפים.
-
-📊 מונים מונפשים.
-
-💬 קרוסלת המלצות.
-
-🖼️ גלריית תמונות.
-
-📱 תפריט ניווט דביק.
-
-💬 כפתור WhatsApp צף.
-
-🎯 אפקטי Hover לכרטיסים.
-
-⚡ אנימציות טעינה.
-
-📲 התאמה מלאה למובייל.
-
-🚀 קוד נקי ומסודר בקובץ אחד.
-
-הדרך הנוחה ביותר היא ליצור עבורך קובץ index.html מוכן להורדה, שתוכל לפתוח מיד בדפדפן או להעלות לאחסון האתר שלך.
-
-
-תביא קובץ
-
-הכנתי עבורך קובץ HTML מוכן.
-
-להורדה: index.html
-
-זה כולל:
-
-עיצוב ירוק בסגנון ספורטיבי.
-
-טקסט מתחלף ב־JavaScript.
-
-רקע חלקיקים מונפש ב־Canvas.
-
-כרטיס עם אפקט Hover.
-
-כפתור WhatsApp.
-
-בסיס טוב להמשך פיתוח.
-
-אם המטרה היא אתר שנראה ממש ברמה של אתר מקצועי מודרני (עם Hero וידאו, אנימציות גלילה, קרוסלת המלצות, גלריה, מונים מונפשים, תפריט מתקדם ועוד), אוכל להכין עבורך גרסה גדולה ומרשימה יותר של כ־1,000+ שורות קוד. 
-
-<!doctype html>
-<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>נדב זהבי | הרצאה</title>
-<style>
-body{margin:0;font-family:Arial;background:#0a3d22;color:#fff}
-header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),#145a32}
-nav{position:fixed;top:0;width:100%;background:#063;display:flex;gap:20px;justify-content:center;padding:12px}
-section{max-width:900px;margin:auto;padding:60px 20px}
-.card{background:rgba(255,255,255,.08);padding:24px;border-radius:16px;transition:.3s}
-.card:hover{transform:translateY(-8px) scale(1.02)}
-.btn{background:#d8b25b;color:#063;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold}
-#particles{position:fixed;inset:0;z-index:-1}
-</style></head>
-<body>
-<canvas id="particles"></canvas>
-<nav><a href="#about" class="btn">על ההרצאה</a></nav>
-<header><div><h1>איך ממשיכים אחרי אירוע שמשנה את החיים?</h1><h2 id="changing">חוסן מנטלי</h2><p><a class="btn" href="https://wa.me/972XXXXXXXXX">WhatsApp</a></p></div></header>
-<section id="about"><div class="card"><h2>על ההרצאה</h2><p>דרך הסיפור האישי שלי אני מדבר על חוסן, התמודדות וצמיחה.</p></div></section>
-<script>
-const words=["חוסן מנטלי","כוח לבחור","לצמוח ממשבר","להפוך כאב לעוצמה"];
-let i=0;setInterval(()=>{i=(i+1)%words.length;changing.textContent=words[i];},2200);
-const c=particles,ctx=c.getContext('2d');function rs(){c.width=innerWidth;c.height=innerHeight}rs();onresize=rs;
-let pts=[...Array(80)].map(()=>({x:Math.random()*c.width,y:Math.random()*c.height,v:(Math.random()*1+.2)}));
-(function a(){ctx.clearRect(0,0,c.width,c.height);ctx.fillStyle='rgba(216,178,91,.8)';
-pts.forEach(p=>{p.y+=p.v;if(p.y>c.height)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,2,0,7);ctx.fill();});requestAnimationFrame(a);})();
-</script></body></html>
-
-index.html
-HTML
-
-
+document.head.appendChild(style);
